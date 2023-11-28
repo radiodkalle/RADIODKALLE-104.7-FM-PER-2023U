@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <script src="https://dl.dropboxusercontent.com/s/45u6xzcnnri2re3/jquery-3.2.1.min.js?dl=0" type="text/javascript"></script>
+  <script src="https://dl.dropboxusercontent.com/s/ai2ny5smsk07k7m/lunaradio.min.js?dl=0" type="text/javascript"></script>
+
+  <!-- Estilo para agregar un borde blanco arriba del contenedor -->
+  <style>
+    #lunaradio-container {
+      border-top: 1px solid white;
+    }
+
+    /* Estilo para agregar bordes blancos y resaltar al pasar el ratón a las imágenes de Facebook y WhatsApp */
+    #lunaradio-container .social-icon img {
+      border: 1px solid white;
+      border-radius: 50%;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    #lunaradio-container .social-icon:hover img {
+      background-color: lightgray; /* Cambia el color de fondo al pasar el ratón */
+    }
+  </style>
+</head>
+
+<body style="margin:0px">
+  <div id="lunaradio-container" style='width:100%; height:100%;background-image: url("https://drive.google.com/uc?id=1GFcKz3aJjWuQMzZcENhX9V2SH4NT2Vho"); background-repeat: no-repeat; background-size: cover; background-position: center; -webkit-border-top-left-radius: 0px; -webkit-border-top-right-radius: 0px; -webkit-border-bottom-right-radius: 0px; -webkit-border-bottom-left-radius: 0px; -moz-border-radius-topleft: 0px; -moz-border-radius-topright: 0px; -moz-border-radius-bottomright: 0px; -moz-border-radius-bottomleft: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border: none;'>
+    <div style="color: white; display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+      <div>
+        <a href="RADIO KALLE 104.7 FM PERÚ" title="RADIO KALLE 104.7 FM PERÚ"></a> Desarrollado por: ICS innovation code solution
+        <a href="CHAN" title="radio kalle"></a>
+      </div>
+
+      <!-- Enlace de Facebook con nueva imagen y tamaño ajustado -->
+      <a href="https://www.facebook.com/profile.php?id=100087564207206&mibextid=rS40aB7S9Ucbxw6v" target="_blank" title="Facebook Page" class="social-icon">
+        <img src="https://drive.google.com/uc?id=1Gf9Cnc7ksSsYO8Ml2mV8DPV9ZNvwgoWR" alt="Facebook Page" style="width: 30px; height: auto; margin-right: 10px;">
+      </a>
+
+      <!-- WhatsApp link with new image and updated to send a message -->
+      <a href="https://wa.me/51929831233" target="_blank" title="WhatsApp" class="social-icon">
+        <img src="https://drive.google.com/uc?id=1Gem75lho6lig4deFrPiBudby6EOnSYrf" alt="WhatsApp" style="width: 30px; height: auto;">
+      </a>
+    </div>
+
+    <div id="lunaradio" style="width:100%; height:550px;"></div>
+
+    <script type="text/javascript">
+      $("#lunaradio").lunaradio({
+        userinterface: "big",
+        backgroundcolor: "rgba(9,15,25,0.8)",
+        fontcolor: "#FFFFFF",
+        hightlightcolor: "#FF0000",
+        fontname: "Saira Condensed",
+        googlefont: "Saira+Condensed:wght@100",
+        fontratio: "0.3",
+        radioname: "RADIODKALLE 104.7 FM PERÚ", // Updated radio name
+        scroll: "true",
+        coverimage: "https://drive.google.com/uc?id=1EE046uOC0APahOezU42RfeYORD07MYJJ", // Updated with Google Drive link
+        usevisualizer: "fake",
+        coverstyle: "animated",
+        visualizertype: "6",
+        multicolorvisualizer: "true",
+        color1: "dc143c",
+        color2: "f1666d",
+        color3: "e6f62f",
+        color4: "#e6f62f",
+        itunestoken: "1000lIPN",
+        metadatatechnic: "corsproxy",
+        ownmetadataurl: "",
+        streamurl: "https://stream.zeno.fm/2hc772fmb3quv",
+        streamtype: "radiozeno",
+        icecastmountpoint: "/radio.mp3",
+        radionomyid: "",
+        radionomyapikey: "",
+        radiozenoid: "utztqpdbt0hvv",
+        radiojarid: "",
+        radiocoid: "",
+        shoutcastpath: "/stream",
+        shoutcastid: "1",
+        streamsuffix: "",
+        metadatainterval: "20000",
+        volume: "95",
+        debug: "false",
+        usestreamcorsproxy: "false",
+        corsproxy: "https://corsradio.herokuapp.com/index.php?q=",
+        autoplay: "true", // Autoplay enabled
+      });
+    </script>
+  </div>
+
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer></script>
+
+<div style="color: red">Prueba Word to HTML - <a href="https://wordtohtml.net/site/payment">p&aacute;sate a PRO</a>.</div>
+</body>
+
+</html>
